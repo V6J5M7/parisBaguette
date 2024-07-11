@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>파리바게이트_메인</title>
+    <style type="text/css">
+        
+        /* --- 초기화 설정 --- */
+        *{margin:0; padding:0;}
+        ul{list-style: none;}
+        a{text-decoration: none; color: #000;}
+        img{border: none; vertical-align: top;}
+        
+        /* ---- header --- */
+        #header{
+            width: 100%; height: 90px;
+            background-color: #063c91;
+        }
+        
+        .head_bg{overflow: hidden;}
+        .gnb1{
+            float: left;
+            margin-left: 250px;
+            margin-top: 35px;
+        }
+        .gnb1 li{
+            float: left;
+            width: 90px;
+            height: 48px;
+            text-align: center;
+            line-height: 48px;
+            font-size: 10pt;
+            font-weight: bold;
+/*            padding-top: 15px;*/
+/*            border: 1px dashed red;*/
+        }
+        .gnb1>li:hover{
+            border-bottom: 2px solid #ff0;
+        }
+        .gnb1 li a{
+            color: white;
+            display: block;
+        }
+        h1{
+           float: left;
+            width: 300px;
+            text-align: center;
+/*            line-height: 4px;*/
+            font-size: 19pt;
+            font-weight: bold;
+            letter-spacing: 4px;
+            margin-left: 190px;
+            margin-top: 28px;
+/*            border: 1px dashed gray;*/
+        }
+        h1 a{
+            color: white;
+        }
+        .gnb2{
+            float: left;
+            margin-left: 280px;
+            margin-top: 35px;
+        }
+        .gnb2 li{
+            float: left;
+            width: 90px;
+            height: 48px;
+            text-align: center;
+            line-height: 48px;
+            font-size: 10pt;
+            font-weight: bold;
+/*            padding-top: 15px;*/
+/*            border: 1px dashed red;*/
+        }
+        .gnb2>li:hover{
+            border-bottom: 2px solid #ff0;
+        }
+        .gnb2 li a{
+            color: white;
+            display: block;
+        }
+        
+        /* --- 메인배너 --- */
+        #section .main_banner{overflow: hidden;}
+        #section .main_banner>div{
+            float: left;
+            width: 33.3333%;
+        }
+        #section .main_banner>div img{width:100%;}
+        
+        /* --- 이벤트/프로모션 --- */
+        #section .promotion{
+/*            width: 1298px;*/
+            width: 1470px;
+/*            height: 649px;*/
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        h2{
+            margin-top: 190px;
+            margin-bottom: 30px;
+        }
+        
+        .promo_group{
+/*            width: 1298px;*/
+            width: 1470px;
+/*            height: 649px;*/
+        }
+        .promo_group li{
+            float: left;
+            width: 350px;
+            height: 649px;
+/*            border: 5px solid red;*/
+        }
+        .img4, .img5, .img6, .img7{
+            width: 340px;
+            height: 400px;
+/*            margin-left: 10px;*/
+        }
+        h3{
+           margin-top: 20px;
+           margin-bottom: 15px; 
+        }
+        h4{
+            font-size: 9pt;
+            color: gray;
+        }
+        
+        /* --- 3번째 단락 --- */
+        
+        .h21{
+            margin-top: 10px;
+        }
+        
+        .story{
+            width: 1470px;
+            margin: 0 auto;
+            overflow: hidden;
+/*            background-color: aqua;*/
+            margin-bottom: 200px;
+        }
+        
+        .bbox1{
+            width: 1470px;
+            height: 700px;
+/*            background-color: indianred;*/
+        }
+        
+        .story_group1{
+            width: 1470px;
+            height: 350px;
+/*            background-color: yellowgreen;*/
+            margin-bottom: 30px;
+        }
+        
+        .story_group11{
+            float: left;
+            width: 735px;
+            height: 350px;
+            overflow: hidden;
+            background-color: lightblue;
+        }
+        
+        .box1{float: left;}
+        
+        .box2{
+            float: left;
+            width: 367px;
+            height: 350px;
+/*            margin-left: 10px; */
+/*            background-color: chocolate;*/
+        }
+        
+        .img21, .img22, .img23, .img24{
+            width: 368px;
+            height: 350px;
+        }
+        
+        .li1{
+            margin-left: 15px;
+            font-size: 11pt;
+            padding-bottom: 20px;
+        }
+        
+        .li2{
+            margin-left: 15px;
+            font-size: 18pt;
+            font-weight: bold;
+            padding-bottom: 17px;
+        }
+        
+        .li3{
+            margin-left: 15px;
+            padding-bottom: 17px;
+            color: #454444;
+            font-size: 10pt;
+        }
+        
+        .li4{
+            margin-left: 15px;
+            font-size: 7pt;
+        }
+        
+        .story_group12{
+            float: left;
+           width: 735px;
+            height: 350px;
+            overflow: hidden;
+/*            background-color: darkred;*/
+        }
+        
+        .box3{float: left;}
+        
+        .box4{
+            float: left;
+            width: 367px;
+            height: 350px;
+            background-color: rebeccapurple;
+        }
+        
+        .story_group2{
+            width: 1470px;
+            height: 350px;
+/*            background-color: #c3bf99;*/
+        }
+        
+        .story_group12{
+            float: left;
+            width: 735px;
+            height: 350px;
+            overflow: hidden;
+/*            background-color: darkgoldenrod;*/
+        }
+        
+        .box5{float: left;}
+        
+        .box6{
+            float: left;
+            width: 367px;
+            height: 350px;
+        }
+        
+        .story_group13{
+            float: left;
+            width: 735px;
+            height: 350px;
+            overflow: hidden;
+        }
+        
+        .box7{float: left;}
+        
+        .box8{
+            float: left;
+            width: 367px;
+            height: 350px;
+        }
+        
+        /* --- 4번째 단락 --- */
+        .h22{
+            margin-top: 10px;
+        }
+    
+        .magazine{
+            width: 1470px;
+            margin: 0 auto;
+            overflow: hidden;
+/*            background-color: aqua;*/
+            margin-bottom: 200px;
+        }
+        
+        .magazine_group{
+            width: 1470px;
+            height: 500px;
+/*            background-color: darkgreen;*/
+            overflow: hidden;
+        }
+        
+        .box1{
+            float: left;
+            width: 490px;
+            height: 600px;
+            background-image: url(images/PaBa/11.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+            background-size: cover;
+            box-sizing: border-box;
+        }
+        
+        .box1 li{
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .mm1{
+            font-size: 19pt;
+            font-weight: bolder;
+            padding-top: 400px;
+            padding-bottom: 15px;
+        }
+        
+        .box2{
+          float: left;
+            width: 490px;
+            height: 600px;
+            background-image: url(images/PaBa/12.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+            background-size: cover;
+            box-sizing: border-box;
+        }
+        
+        .box2 li{
+            color: white;
+            text-align: center; 
+            font-weight: bold;
+        }
+        
+        .mm2{
+            font-size: 19pt;
+            font-weight: bolder;
+            padding-top: 400px;
+            padding-bottom: 15px;
+        }
+        
+        .box3{
+          float: left;
+            width: 490px;
+            height: 600px;
+            background-image: url(images/PaBa/13.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: center;
+            background-size: cover;
+            box-sizing: border-box;
+        }
+        
+        .box3 li{
+            color: white;
+            text-align: center; 
+            font-weight: bold;
+        }
+        
+        .mm3{
+            font-size: 19pt;
+            font-weight: bolder;
+            padding-top: 400px;
+            padding-bottom: 15px;
+        }
+        
+      
+        
+    </style>
+</head>
+
+<body>
+   <div id="header">
+      <div class="head_bg">
+           <ul class="gnb1">
+               <li><a href="#">파바의 약속</a></li>
+               <li><a href="#">파바 매거진</a></li>
+               <li><a href="#">파바 스토리</a></li>
+               <li><a href="#">상품 안내</a></li>
+           </ul>
+           <h1><a href="https://www.paris.co.kr/">PARIS BAGUETTE</a></h1>
+           <ul class="gnb2">
+               <li><a href="#">매장 정보</a></li>
+               <li><a href="#">주문 정보</a></li>
+               <li><a href="#">프로모션</a></li>
+           </ul>
+       </div>
+   </div>
+   
+   <div id="section">
+      
+       <div class="main_banner">
+           <div class="img1"><img src="images/PaBa/KakaoTalk_20240624_110137946.jpg" alt="bann1"></div>
+           <div class="img2"><img src="images/PaBa/KakaoTalk_20240624_110137946_01.jpg" alt="bann2"></div>
+           <div class="img3"><img src="images/PaBa/KakaoTalk_20240624_110137946_02.jpg" alt="bann3"></div>
+       </div>
+       <div class="promotion">
+          <h2>PROMOTION</h2>
+          <ul class="promo_group">
+              <li>
+                  <img class="img4" src="images/PaBa/mitbanner1.jpg" alt="밑배너1">
+                  <h3>💙파리생제르맹 콜라보 스페셜 굿즈 4탄<br> 파리생제르맹 카라비너 3단 우산💙</h3>
+                  <h4>READ MORE</h4>
+              </li>
+              <li>
+                  <img class="img5" src="images/PaBa/mitbanner2.jpg" alt="밑배너2">
+                  <h3>💙파바 M포인트 위크💙</h3>
+                  <h4>READ MORE</h4>
+              </li>
+              <li>
+                  <img class="img6" src="images/PaBa/KakaoTalk_20240624_110137946.jpg" alt="밑배너4">
+                  <h3>💛1988 실키롱-케익💙</h3>
+                  <h4>READ MORE</h4>
+              </li>
+              <li>
+                  <img class="img7" src="images/PaBa/KakaoTalk_20240624_110137946_01.jpg" alt="밑배너4">
+                  <h3>💙파리 올림픽💙 팀코리아 응원가자🛫</h3>
+                  <h4>READ MORE</h4>
+              </li>
+          </ul>
+       </div>
+       
+   <div class="story">
+       <h2 class="h21">PB Story</h2>
+          <div class="bbox1">
+               <ul class="story_group1">
+                   <li class="story_group11">
+                      <div class="box1">
+                           <img class="img21" src="images/PaBa/1.jpg" alt="밑그1">
+                       </div>
+                       <ul class="box2">
+                          <li class="li1">광고</li>
+                          <li class="li2">뜨거운 여름에는 와르르르 파바빙수✨</li>
+                          <li class="li3">뜨거운 여름을 맞이할 파리바게뜨 빙수 준비 완료✨<br> 제철을 맞아 달콤한 복숭아 빙수와 놓칠 수 없는 애플망고<br> 빙수, 남녀노소 원픽 팥빙수까지!</li>
+                          <li class="li4">2024-05-22</li>
+                      </ul>
+                   </li>
+                   <li class="story_group12">
+                      <div class="box3">
+                           <img class="img22" src="images/PaBa/2.jpg" alt="밑그2">
+                       </div>
+                       <ul class="box4">
+                           <li class="li1">광고</li>
+                           <li class="li2">☕COFFEE & CAKES 🍰<br>커피와 파바 디저트가 만나<br> 행복해진 마음의 소리💖(Full ver.)</li>
+                           <li class="li3">음~🍰 새로운 파바 디저트 케이크 한 입 음~☕ 새로워진<br> 카페 아다지오 100% 스페셜티 한 입 들리세요? 커피와<br> 파바 디저트가 만나 행복해진 마음의 소리! 올 봄, 파바가 디저트 파 봄✨</li>
+                           <li class="li4">2024-04-27</li>
+                       </ul>
+                   </li>
+               </ul>
+               <ul class="story_group2">
+                   <li class="story_group13">
+                      <div class="box5">
+                           <img class="img23" src="images/PaBa/3.jpg" alt="밑그3">
+                       </div>
+                       <ul class="box6">
+                           <li class="li1">광고</li>
+                           <li class="li2">[V-log] 콜롬비아 가자는 말이<br> 농담이 아니었던 건에<br> 대하여….</li>
+                           <li class="li3">카페 아다지오 100% 스페셜티 원두가 새로 나왔다는데<br> 가만히 있을 수 있냐구요!!!! 커피가 좋아서, 또는 커피를 잘<br> 몰라도… 아무튼 커피를 찾아 떠나는 콜롬비아 출장 ✈️</li>
+                           <li class="li4">2024-04-26</li>
+                       </ul>
+                   </li>
+                   <li class="story_group14">
+                      <div class="box7">
+                           <img class="img24" src="images/PaBa/4.jpg" alt="밑그4">
+                       </div>
+                       <ul class="box8">
+                           <li class="li1">광고</li>
+                           <li class="li2">파리바게뜨 X 파리생제르맹이<br> 선정한 Best 5 Players💙</li>
+                           <li class="li3">⚽LET’S PARIS⚽ 파리바게뜨 X 파리생제르맹 선수들이<br> 반한파바 제품<br> 라인업이 궁금하다면? 파리바게뜨 홈페이지에서 확인해</li>
+                           <li class="li4">2024-04-17</li>
+                       </ul>
+                   </li>
+               </ul>
+           </div>
+           
+       </div>
+       
+       <div class="magazine">
+           <h2 class="h22">PB MAGAZINE</h2>
+               <div class="magazine_group">
+                       <ul class="box1">
+                           <li class="mm1">챔피언십 우승 축하 이벤트</li>
+                           <li class="mn1">💙파리생제르맹⚽ 프랑스 챔피언십 우승 축하 이벤트🏆</li>
+                       </ul>
+                       
+                       <ul class="box2">
+                           <li class="mm2">LET’S PARIS</li>
+                           <li class="mn1">💙LET’S PARIS💙 파바 빵 먹고, 렛츠파리!✨</li>
+                       </ul>
+                       
+                       <ul class="box1">
+                           <li class="mm3">LET’S PARIS</li>
+                           <li class="mn2">파리바게뜨 X 파리생제르맹이 선정한 Best 5 Players!</li>
+                       </ul>
+               </div>
+            
+           
+           
+       </div>
+       
+   </div>
+   
+   <div id="footer"></div>
+    
+</body>
+</html>
